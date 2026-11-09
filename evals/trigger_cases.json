@@ -1,0 +1,1 @@
+{"positive_concepts": {"task": ["音效", "配乐", "koubo-sound-design"]}, "description_required_concepts": [], "recommended_threshold": 0.1, "negative_patterns": ["写一首诗"], "should_trigger": [{"text": "请为已锁定口播和动效安排音效与配乐，音效对应动作，音乐不盖人声，保存来源与分轨。"}, {"text": "koubo-sound-design 音效与音乐分工"}], "should_not_trigger": [{"text": "写一首诗"}], "near_neighbor": [{"text": "只帮我改一个文件名"}]}
