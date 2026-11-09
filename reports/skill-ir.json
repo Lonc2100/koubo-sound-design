@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-11-09",
+  "package": {
+    "name": "koubo-sound-design",
+    "version": "0.1.0",
+    "owner": "Lonc2100",
+    "maturity_tier": "scaffold",
+    "lifecycle_stage": null,
+    "upstream_inspiration": null,
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "用户已有口播和画面/动效，要求配动作音效、延续BGM、修复突兀静音或制作整片混音时使用；不改原话、不自动购曲或公开发布。",
+    "job_to_be_done": "用户已有口播和画面/动效，要求配动作音效、延续BGM、修复突兀静音或制作整片混音时使用；不改原话、不自动购曲或公开发布。",
+    "target_users": [
+      "Qiaomu operator"
+    ],
+    "inputs": [],
+    "outputs": [],
+    "exclusions": [],
+    "qiaomu_defaults": {}
+  },
+  "triggers": {
+    "should_trigger": [
+      "请为已锁定口播和动效安排音效与配乐，音效对应动作，音乐不盖人声，保存来源与分轨。",
+      "koubo-sound-design 音效与音乐分工"
+    ],
+    "should_not_trigger": [
+      "写一首诗"
+    ],
+    "near_neighbor": [
+      "只帮我改一个文件名"
+    ]
+  },
+  "workflow": {
+    "router_rules": [],
+    "compact_workflow": [],
+    "gate_ladder": [],
+    "output_contract": []
+  },
+  "resources": {
+    "references": [
+      "references\\production-methods.md",
+      "references\\standards.md"
+    ],
+    "scripts": [],
+    "evals": [
+      "evals\\trigger_cases.json"
+    ],
+    "reports": [
+      "reports\\skill-ir.json",
+      "reports\\trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": null,
+    "adapter_targets": [
+      "openai",
+      "claude",
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {},
+    "execution": {},
+    "trust": {},
+    "permissions": {},
+    "degradation": {}
+  },
+  "gates": {},
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "ok": true,
+  "threshold": 0.1,
+  "description_concepts": [
+    "task"
+  ],
+  "missing_description_concepts": [],
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "failures": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "请为已锁定口播和动效安排音效与配乐，音效对应动作，音乐不盖人声，保存来源与分轨。",
+        "family": "default",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.333,
+        "matched_concepts": [
+          "task"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "koubo-sound-design 音效与音乐分工",
+        "family": "default",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.333,
+        "matched_concepts": [
+          "task"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "写一首诗",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": "写一首诗"
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "只帮我改一个文件名",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      }
+    ]
+  }
+}
